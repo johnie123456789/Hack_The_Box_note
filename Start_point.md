@@ -33,10 +33,16 @@
 3. SFTP
 4. ping
 5. nmap (Thanks)
+   ```
+   nmap -sV IP 
+   ```
 6. nmap
+   ```
+   nmap -sV IP 
+   ```
 7. ftp -h
 8. anonymous
-9. 230
+9.  230
 10. ls
 11. get
 12. 退出並cat flag
@@ -45,3 +51,15 @@
    exit
    cat flag.txt
    ```
+
+# Dancing
+1. Server Message Block
+2. 445
+3. microsoft-ds
+4. -L
+5. smbclient -L IP
+6. WorkShares
+7. get
+8. smbclient \\\\IP\\WorkShares
+   多逛逛，多get，就會有flag了
+
