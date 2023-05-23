@@ -26,3 +26,22 @@
    ```
    cat flag.txt
    ```
+
+# Fawn
+1. File Transfer Protocol
+2. 21
+3. SFTP
+4. ping
+5. nmap (Thanks)
+6. nmap
+7. ftp -h
+8. anonymous
+9. 230
+10. ls
+11. get
+12. 退出並cat flag
+   ```
+   close
+   exit
+   cat flag.txt
+   ```
