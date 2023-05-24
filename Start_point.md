@@ -90,4 +90,28 @@
 10. keys *
 11. get flag
 # Tier1
+## Appointment
+1. Structured Query Language
+2. SQL injection
+3. Personally identifiable information
+4. A03:2021-injection
+5. nmap
+   (Apache httpd 2.4.38 ((Debian)))
+6. 443
+7. directory
+8. 404
+9. dir
+10. \#
+11. sql injection
+12. sql injection
+    
+    打開瀏覽器用IP連線
+    在user輸入payload
+    payload:
+    ```
+    admin' #
+    ```
+    flag和第11題答案就會出現了
+
+
 # Tier2
