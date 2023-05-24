@@ -1,4 +1,5 @@
-# Meow
+# Tier0
+## Meow
 
 +  連VPN(用Kali OR Parrot)
    ```
@@ -27,7 +28,7 @@
    cat flag.txt
    ```
 
-# Fawn
+## Fawn
 1. File Transfer Protocol
 2. 21
 3. SFTP
@@ -52,7 +53,7 @@
    cat flag.txt
    ```
 
-# Dancing
+## Dancing
 1. Server Message Block
 2. 445
 3. microsoft-ds
@@ -62,4 +63,24 @@
 7. get
 8. smbclient \\\\IP\\WorkShares
    多逛逛，多get，就會有flag了
+
+## Redeemer
+1. 6379
+   ```
+   nmap -sV  -p- 10.129.18.32 -min-rate 5000
+
+   ```
+2. redis
+3. In-memory Database
+4. redis-cli
+5. -h
+6. 連線
+   ```
+   redis-cli -h 10.129.18.32
+   ```
+7. info
+8. select
+9. 4
+10. keys *
+11. get flag
 
