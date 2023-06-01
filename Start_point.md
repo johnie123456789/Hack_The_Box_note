@@ -205,4 +205,22 @@ RECONFIGURE;
 9. C:\Users\Administrator\Desktop\root.txt
 
 ## Oopsie
-1. 
+1. proxy
+2. /cdn-cgi/login
+3. cookie
+4. 34322
+5. /uploads
+6. db.php
+7. find
+8. root
+9. Set Owner User ID 
+10. cat
+11. /home/robert/user.txt
+12. /root/root.txt
+    ```
+    su robert
+    bugtracker
+    ../../root/root.txt
+    ```
+
+## vaccine
